@@ -1,8 +1,43 @@
-# Beszel — Lightweight Server Monitoring
+# Deploy and Host
 
 [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/beszel)
 
 ![Beszel OG Image](og-image.svg)
+
+Beszel is a lightweight server monitoring platform with historical data, Docker stats, and alert functions. Deploy it on Railway in minutes to start monitoring your servers — no external database required.
+
+## About Hosting
+
+Beszel runs as a single Docker container (hub) on port 8090. Railway provides compute, TLS at the edge, and a public URL. The hub stores all monitoring data at `/beszel_data` — add a Railway Volume there to persist metrics across restarts. Agents run on your monitored servers and stream data to the hub via WebSocket.
+
+## Why Deploy
+
+- **Ultra-lightweight** — ~32MB image, ~12MB RAM at idle. Smaller and less resource-intensive than leading solutions.
+- **Zero external database** — Built on PocketBase, everything runs in one container with embedded storage.
+- **Docker stats** — Tracks CPU, memory, and network usage history for each container.
+- **Alerts** — Configurable alerts via Discord, Slack, Gotify, email, and webhook for CPU, memory, disk, bandwidth, temperature, and more.
+- **GPU monitoring** — Nvidia, AMD, and Intel GPU metrics with power draw tracking.
+- **Multi-user** — Users manage their own systems. Admins can share systems across users.
+- **OAuth / OIDC** — Supports many OAuth2 providers. Password auth can be disabled.
+- **Automatic backups** — Save to and restore from disk or S3-compatible storage.
+
+## Common Use Cases
+
+- **Infrastructure monitoring** — Keep tabs on all your servers, VPS instances, and containers from one dashboard.
+- **Container resource tracking** — Monitor CPU, memory, and network per-container across your Docker/Podman hosts.
+- **Alert-driven operations** — Get notified when disk fills up, CPU spikes, or a service goes down.
+- **Multi-server fleet management** — Deploy agents across staging, production, and development environments.
+- **GPU workload monitoring** — Track GPU utilization, temperature, and power draw for AI/ML workloads.
+
+## Dependencies for Beszel
+
+### Deployment Dependencies
+
+Beszel is a standalone service that requires no external dependencies on Railway. It uses embedded PocketBase storage and runs entirely within its single container. Add a Railway Volume at `/beszel_data` for persistent metric history.
+
+---
+
+# Beszel — Lightweight Server Monitoring
 
 > A lightweight server monitoring platform with historical data, Docker stats, and alert functions. Smaller and less resource-intensive than leading solutions.
 
