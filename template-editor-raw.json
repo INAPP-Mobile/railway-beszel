@@ -1,0 +1,18 @@
+[
+  {
+    "value": "8090",
+    "description": "Port Beszel listens on (default: 8090, hardcoded upstream). Must match Railway's PORT."
+  },
+  {
+    "value": "",
+    "description": "Public URL of your Beszel hub (e.g., https://your-app.up.railway.app). Used for links in emails and notifications."
+  },
+  {
+    "value": "",
+    "description": "Email of a user to auto-authenticate (skip login page). Leave empty to require login."
+  },
+  {
+    "value": "false",
+    "description": "Set to true to disable password auth and use OAuth/OIDC only."
+  }
+]
