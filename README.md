@@ -1,8 +1,8 @@
 # Deploy and Host
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/beszel)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/new/template/beszel)
 
-![Beszel OG Image](og-image.svg)
+![Beszel OG Image](https://raw.githubusercontent.com/INAPP-Mobile/railway-beszel/main/og-image.svg)
 
 Beszel is a lightweight server monitoring platform with historical data, Docker stats, and alert functions. Deploy it on Railway in minutes to start monitoring your servers — no external database required.
 
