@@ -6,6 +6,12 @@
   "deploy": {
     "numReplicas": 1,
     "restartPolicyType": "ON_FAILURE",
-    "restartPolicyMaxRetries": 3
+    "restartPolicyMaxRetries": 3,
+    "volumeMounts": [
+      {
+        "name": "beszel-data",
+        "mountPath": "/beszel_data"
+      }
+    ]
   }
 }
