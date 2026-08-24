@@ -13,7 +13,7 @@
 #     there to survive restarts.
 # =============================================================================
 
-FROM docker.io/henrygd/beszel:0.18.7
+FROM docker.io/henrygd/beszel:0.18.8
 
 LABEL org.opencontainers.image.source="https://github.com/INAPP-Mobile/railway-beszel"
 
